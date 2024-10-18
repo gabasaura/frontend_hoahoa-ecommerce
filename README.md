@@ -1,5 +1,5 @@
 # ✨ HOA HOA E-commerce Frontend
-### This is the frontend for HOA HOA, a print e-commerce application built using modern web technologies like React and TypeScript.
+### This is the frontend for HOA HOA, a print e-commerce application built using modern web technologies like React and TypeScript. Personal project with a friend to sell our delulus to our friends and family.
 
 ## 💅 Features
 - Browse and search for prints and products.
