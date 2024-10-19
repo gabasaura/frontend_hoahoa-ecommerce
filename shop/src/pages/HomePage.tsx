@@ -1,6 +1,4 @@
 import React from 'react';
-import ProductCard from '../components/ProductCard';
-import CartOffCanvas from '../components/CartOffCanvas';
 import MainSlideshow from '../components/MainSlideshow';
 import Categories from '../components/Categories';
 import WelcomeSection from '../components/WelcomeSection';
