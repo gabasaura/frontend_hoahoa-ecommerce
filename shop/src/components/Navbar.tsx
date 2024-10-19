@@ -1,8 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import SearchPopup from './SearchPopup';
 
 const Navbar: React.FC = () => {
   return (
+    <>
+    <SearchPopup />
     <nav className="navbar navbar-expand-lg text-white text-uppercase">
       <div className="container-fluid">
         <Link to="/" className="navbar-brand">
@@ -26,6 +29,7 @@ const Navbar: React.FC = () => {
         </div>
       </div>
     </nav>
+    </>
   );
 };
 

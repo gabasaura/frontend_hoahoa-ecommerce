@@ -6,6 +6,7 @@ import HomePage from './pages/HomePage';
 import ShopPage from './pages/ShopPage';
 import ProductPage from './pages/ProductPage';
 import ContactPage from './pages/ContactPage';
+import Preloader from './components/Preloader';
 
 
 const App: React.FC = () => {
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Footer />
+      <Preloader />
     </Router>
   );
 };

@@ -1,19 +1,30 @@
 import React from 'react';
 import ProductCard from '../components/ProductCard';
+import CartOffCanvas from '../components/CartOffCanvas';
+import MainSlideshow from '../components/MainSlideshow';
+import Categories from '../components/Categories';
+import WelcomeSection from '../components/WelcomeSection';
+import NewArrivals from '../components/NewArrivals';
+import BestSellers from '../components/BestSellers';
+import Newsletter from '../components/Newsletter';
+import Features from '../components/Features';
 
 const HomePage: React.FC = () => {
   return (
-    <div>
-      <section className="hero">
-        <h1>Welcome to SideQuest</h1>
-        <p>Shop you millennial fashion goods!</p>
-      </section>
-      <section className="products">
-        <ProductCard title="Smartphone" price={299} imageUrl="../assets/images/category-thumb-1.jpg" />
-        <ProductCard title="Laptop" price={799} imageUrl="../assets/images/category-thumb-2.jpg" />
-      </section>
-    </div>
+    <>
+
+<MainSlideshow />
+<Features />
+<WelcomeSection />
+<Categories />
+<NewArrivals />
+<BestSellers />
+<Newsletter />
+
+</>
+
   );
 };
+
 
 export default HomePage;
