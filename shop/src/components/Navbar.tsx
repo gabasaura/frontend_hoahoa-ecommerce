@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
     <nav className="navbar navbar-expand-lg text-white text-uppercase">
       <div className="container-fluid">
         <Link to="/" className="navbar-brand">
-          <img src="/assets/images/logo.svg" alt="logo" />
+          <img src="images/logo.svg" alt="logo" />
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas">
           <span className="navbar-toggler-icon"></span>
