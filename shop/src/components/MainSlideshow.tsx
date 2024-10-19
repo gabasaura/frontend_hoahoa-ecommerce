@@ -1,4 +1,4 @@
-import React from 'react';
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 const MainSlideshow: React.FC = () => {
   return (
@@ -26,14 +26,12 @@ const MainSlideshow: React.FC = () => {
             ))}
           </div>
           <div className="icon-arrow icon-arrow-left text-white">
-            <svg width="50" height="50" viewBox="0 0 24 24">
-              <use xlinkHref="#arrow-left"></use>
-            </svg>
+          <FaAngleLeft />
+
           </div>
           <div className="icon-arrow icon-arrow-right text-white">
-            <svg width="50" height="50" viewBox="0 0 24 24">
-              <use xlinkHref="#arrow-right"></use>
-            </svg>
+          <FaAngleRight />
+
           </div>
         </div>
       </div>

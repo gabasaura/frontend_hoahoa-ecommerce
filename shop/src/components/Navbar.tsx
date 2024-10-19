@@ -1,15 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import SearchPopup from './SearchPopup';
+
 
 const Navbar: React.FC = () => {
   return (
     <>
-    <SearchPopup />
     <nav className="navbar navbar-expand-lg text-white text-uppercase">
       <div className="container-fluid">
         <Link to="/" className="navbar-brand">
-          <img src="images/logo.svg" alt="logo" />
+          <h2>HOAHOAHOA</h2>
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas">
           <span className="navbar-toggler-icon"></span>
@@ -17,7 +16,7 @@ const Navbar: React.FC = () => {
         <div className="collapse navbar-collapse">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link to="/" className="nav-link">Home</Link>
+              <Link to="/" className="nav-link">About</Link>
             </li>
             <li className="nav-item">
               <Link to="/shop" className="nav-link">Shop</Link>

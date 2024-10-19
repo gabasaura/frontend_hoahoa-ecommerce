@@ -1,13 +1,15 @@
 import React from 'react';
+import { FaCcPaypal, FaCcVisa, FaCcMastercard, FaDhl } from "react-icons/fa";
+
 
 const Footer: React.FC = () => {
   return (
     <footer id="footer" className="bg-black">
       <div className="container-fluid">
         <div className="row d-flex flex-wrap justify-content-between my-5 py-5">
-          <FooterSection title="Quick Links" links={quickLinks} />
+          <FooterSection title="Shortcuts" links={quickLinks} />
           <FooterSection title="About" links={aboutLinks} />
-          <FooterSection title="Help & Info" links={helpLinks} />
+          <FooterSection title="Info" links={helpLinks} />
           <ContactSection />
         </div>
       </div>
@@ -36,10 +38,10 @@ const ContactSection: React.FC = () => (
     <div className="footer-menu">
       <h5 className="widget-title mb-4">Contact Us</h5>
       <p>
-        Do you have any questions or suggestions? <a href="mailto:contact@yourcompany.com" className="item-anchor">contact@yourcompany.com</a>
+        Do you have any questions or suggestions? <a href="mailto:contact@sidequest.com" className="item-anchor">contact@sidequest.com</a>
       </p>
       <p>
-        Need support? Give us a call. <a href="tel:+43 720 11 52 78" className="item-anchor">+43 720 11 52 78</a>
+        Need support? Give us a call. <a href="tel:+5690000000" className="item-anchor">+56 9 0303 4456</a>
       </p>
     </div>
   </div>
@@ -52,19 +54,18 @@ const FooterBottom: React.FC = () => (
         <div className="col-md-6 d-flex flex-wrap">
           <div className="shipping">
             <span>We ship with:</span>
-            <img src="images/arct-icon.png" alt="icon" />
-            <img src="images/dhl-logo.png" alt="icon" />
+            <FaDhl size={45}/>
           </div>
           <div className="payment-option">
-            <span>Payment Option:</span>
-            <img src="images/visa-card.png" alt="card" />
-            <img src="images/paypal-card.png" alt="card" />
-            <img src="images/master-card.png" alt="card" />
+            <span>Payment:</span>
+            <FaCcPaypal size={35}/>
+            <FaCcVisa  size={35}/>
+            <FaCcMastercard size={35}/>
           </div>
         </div>
         <div className="col-md-6 text-start text-md-end">
           <p>
-            © Copyright 2023 ElectroStore. All rights reserved. HTML Template by <a href="https://templatesjungle.com" target="_blank">TemplatesJungle</a>
+            © 2024 Sidequest. Dev by <a href="https://gabaportafolio.vercel.app/" target="_blank">GABA</a>
           </p>
         </div>
       </div>
@@ -72,7 +73,7 @@ const FooterBottom: React.FC = () => (
   </div>
 );
 
-const quickLinks = ['Home', 'About', 'Services', 'Single item', 'Contact'];
+const quickLinks = ['Home', 'About', 'Shop', 'Contact'];
 const aboutLinks = ['How it works', 'Our packages', 'Promotions', 'Refer a friend'];
 const helpLinks = ['Track Your Order', 'Returns + Exchanges', 'Shipping + Delivery', 'Contact Us', 'Find us easy', 'Faqs'];
 

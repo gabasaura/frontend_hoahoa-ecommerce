@@ -11,15 +11,15 @@ const HomePage: React.FC = () => {
   return (
     <>
 
-<MainSlideshow />
-<Features />
-<WelcomeSection />
-<Categories />
-<NewArrivals />
-<BestSellers />
-<Newsletter />
+      <MainSlideshow />
+      <Features />
+      <WelcomeSection />
+      <Categories />
+      <NewArrivals />
+      <BestSellers />
+      <Newsletter />
 
-</>
+    </>
 
   );
 };

@@ -1,0 +1,17 @@
+/* navbar.css */
+.navbar {
+    padding: 1rem;
+    background-color: var(--bs-dark);
+    color: var(--bs-light);
+  }
+  
+  .navbar-toggler {
+    padding: 4px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .navbar-brand img {
+      max-width: 65%;
+    }
+  }
+  

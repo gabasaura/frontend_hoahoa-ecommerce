@@ -1,0 +1,33 @@
+/* global.css */
+body {
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    background-color: var(--bs-body-bg);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    font-weight: var(--heading-font-weight);
+    color: var(--heading-color);
+  }
+  
+  a {
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+  }
+  
+  .container-fluid {
+    max-width: 1800px;
+  }
+  
+  .btn {
+    --bs-btn-border-radius: 0;
+  }
+  
+  .btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+  }
+  
