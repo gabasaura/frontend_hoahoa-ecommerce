@@ -1,41 +1,23 @@
-import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import { Navigation } from 'swiper/modules';
+// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 
+
 const MainSlideshow: React.FC = () => {
-  const slides = slideshowData.length;
-  
+
   return (
     <section>
       <div className="container-fluid">
         <Swiper
-          spaceBetween={80}
-          slidesPerView={Math.min(slides, 3)} // Dynamically adjust slidesPerView based on the number of slides
-          loop={slides > 3} // Enable loop only if there are more than 3 slides
-          navigation={{
-            nextEl: '.icon-arrow-right',
-            prevEl: '.icon-arrow-left',
-          }}
-          breakpoints={{
-            300: {
-              slidesPerView: Math.min(slides, 1),
-              spaceBetween: 20,
-            },
-            768: {
-              slidesPerView: Math.min(slides, 2),
-              spaceBetween: 20,
-            },
-            1200: {
-              slidesPerView: Math.min(slides, 3),
-              spaceBetween: 80,
-            },
-          }}
+          navigation={true}
+          modules={[Navigation]}
+          className="mySwiper"
         >
           {slideshowData.map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className="swiper-slide ">
+              <div className="swiper-slide">
                 <img src={slide.image} alt="slideshow" />
                 <div className="banner-content w-100">
                   <div className="container">
@@ -54,14 +36,6 @@ const MainSlideshow: React.FC = () => {
             </SwiperSlide>
           ))}
         </Swiper>
-
-        {/* Navigation Arrows */}
-        <div className="icon-arrow icon-arrow-left text-white">
-          <FaAngleLeft />
-        </div>
-        <div className="icon-arrow icon-arrow-right text-white">
-          <FaAngleRight />
-        </div>
       </div>
     </section>
   );
