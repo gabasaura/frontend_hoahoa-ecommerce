@@ -17,7 +17,7 @@ const MainSlideshow: React.FC = () => {
         >
           {slideshowData.map((slide, index) => (
             <SwiperSlide key={index}>
-              <div className="swiper-slide">
+              <div className="swiper-slide ">
                 <img src={slide.image} alt="slideshow" />
                 <div className="banner-content w-100">
                   <div className="container">

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Features: React.FC = () => {
     return (
-        <section className="features" style={{ position: 'relative', marginTop: '-100px', zIndex: 2 }}>
+        <section className="features">
             <div className="container-lg">
                 <div className="bg-black p-5">
                     <div className="row">

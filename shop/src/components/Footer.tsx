@@ -48,7 +48,7 @@ const ContactSection: React.FC = () => (
 );
 
 const FooterBottom: React.FC = () => (
-  <div className="border-top py-4">
+  <div className="border-top">
     <div className="container-fluid">
       <div className="row">
         <div className="col-md-6 d-flex flex-wrap">

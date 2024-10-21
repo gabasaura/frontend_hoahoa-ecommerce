@@ -10,17 +10,12 @@ import Features from '../components/Features';
 const HomePage: React.FC = () => {
   return (
     <>
-
       <MainSlideshow />
       <Features />
       <WelcomeSection />
-      <Categories />
       <NewArrivals />
       <BestSellers />
-      <Newsletter />
-
     </>
-
   );
 };
 

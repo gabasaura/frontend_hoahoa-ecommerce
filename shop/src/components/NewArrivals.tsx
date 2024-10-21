@@ -2,7 +2,7 @@ import React from 'react';
 
 const NewArrivals: React.FC = () => {
     return (
-        <section id="new-arrival" className="new-arrival py-5">
+        <section id="new-arrival" className="new-arrival">
             <div className="container-fluid">
                 <div className="d-flex flex-wrap justify-content-between align-items-center mt-5 mb-3">
                     <h4 className="text-uppercase">Our New Arrivals</h4>
